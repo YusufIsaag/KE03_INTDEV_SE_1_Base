@@ -1,4 +1,12 @@
 ﻿@page
 @model KE03_INTDEV_SE_1_Base.Pages.WinkelwagenModel
 @{
+    ViewData["Title"] = "Home page";
 }
+<h1>Mijn winkelwagen</h1>
+
+<div clss="afrekenen">
+    <button class="betalen">
+        <a asp-area="" asp-page="/Afrekenen">Verder naar bestellen</a>
+        </button>
+</div>

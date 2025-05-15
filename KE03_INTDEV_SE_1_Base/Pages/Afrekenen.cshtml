@@ -1,0 +1,64 @@
+﻿@page
+@model KE03_INTDEV_SE_1_Base.Pages.AfrekenenModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@* <form action="index.cshtml" method="POST" voor fotos: enctype="multipart/form-data"> *@
+<form>
+    @* Persoon *@
+    <label for="Aanhef">Aanhef</label> <br />
+    
+    <label for="Mevrouw">Mevrouw</label>
+    <input type="radio" id=" Mevrouw" value="Mevrouw" name="Aanhef"/>
+
+    <label for="De-heer">De heer</label>
+    <input type="radio" id=" De-heer" value="De heer" name="Aanhef" />
+
+    <label for="Geen">Liever geen van beide</label>
+    <input type="radio" id=" Geen" value="Geen" name="Aanhef" /> <br /><br />
+
+
+    <label for="Voornaam">Vooraam</label>
+    <input type="text" id="Voornaam" placeholder="Lisa" required /> <br /><br />
+
+    <label for="Tussenvoegsel">Tussenvoegsels (optioneel)</label>
+    <input type="text" id="Tussenvoegsel" placeholder="Bijvoorbeeld: van der" /> <br /><br />
+
+    <label for="Achternaam">Achteraam</label>
+    <input type="text" id="Achternaam" placeholder="Janssen" required /> <br /><br />
+
+    <label for="E-mail">Email</label>
+    <input type="text" id="E-mail" placeholder="lisa@hotmail.com" required /> <br /><br />
+    <hr />
+
+    @* Woonplaats *@
+    <label for="Postcode">Postcode</label>
+    <input type="text" id="Postcode" placeholder="Bijvoorbeeld: 1234 AA" minlength="6" maxlength="6" required /> <br /><br />
+
+    <label for="Huisnummer">Huisnummer & toevoeging </label>
+    <input type="text" id="Huisnummer" placeholder="Bijvoorbeeld: 10A" required /> <br /><br />
+
+    <label for="Plaats">Plaats</label>
+    <input type="text" id="Plaats" required /> <br /><br />
+
+    <label for="Straatnaam">Straatnaam</label>
+    <input type="text" id="Straatnaam" placeholder="Bijvoorbeeld: 10A" required /> <br /><br />
+    <hr />
+
+    @* Betaling *@
+
+    <label for="Betaalmethode">Betaalmethode</label>
+    <select id="Betaalmethode">
+        <option value="IDEAL">IDEAL</option>
+        <option value="Achteraf Betalen">Achteraf Betalen</option>
+        <option value="Creditkaart">Creditkaart</option>
+        <option value="Debitkaart">Debitkaart</option>
+        <option value="Cadeaukaart">Cadeaukaart</option> 
+    </select> 
+    <br />
+    
+    <input type="reset"/> <br />
+    <input type="submit"
+
+</form>
